@@ -1,0 +1,301 @@
+﻿/*General*/
+.mr-3 {
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sidebar .fa {
+    width: 17px;
+}
+
+.context {
+    padding: 50px;
+}
+
+.x-abs-center {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%)
+}
+
+/*Login*/
+
+.login-section {
+    padding: 7rem 0;
+}
+
+.login-wrap {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 34px -15px rgba(0,0,0,.24);
+    -moz-box-shadow: 0 10px 34px -15px rgba(0,0,0,.24);
+    box-shadow: 0 10px 50px -10px rgba(0,0,0,.24)
+}
+
+    .login-wrap h3 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #8d448b
+    }
+
+        .login-wrap h3:hover {
+            text-decoration: underline;
+        }
+
+        .login-wrap h3 a {
+            color: #8d448b;
+        }
+
+
+    .login-wrap .icon {
+        width: 80px;
+        height: 80px;
+        background: #8d448b;
+        border-radius: 50%;
+        font-size: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px
+    }
+
+        .login-wrap .icon span {
+            color: #fff
+        }
+
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+    .checkbox-wrap input {
+        margin-right: 10px;
+    }
+
+.form-group .submit {
+    position: absolute;
+    top: 316px;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+
+#btnForgotPassword:hover {
+    text-decoration: underline;
+}
+
+/*.form-control {
+    height: 48px;
+    background: rgba(0,0,0,.05);
+    color: #000;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}*/
+
+/*SideBar*/
+
+.wrapper {
+    width: 100%;
+}
+
+#sidebar {
+    min-width: 270px;
+    max-width: 270px;
+    height: 947px;
+    background: #3445b4;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+
+    #sidebar .h6 {
+        color: #fff;
+    }
+
+    #sidebar.active {
+        margin-left: -270px;
+    }
+
+    #sidebar h1 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+        #sidebar h1 .logo {
+            color: #fff;
+        }
+
+            #sidebar h1 .logo span {
+                font-size: 14px;
+                color: #44bef1;
+                display: block;
+            }
+
+    #sidebar ul.components {
+        padding: 0;
+    }
+
+    #sidebar ul li {
+        font-size: 16px;
+    }
+
+        #sidebar ul li > ul {
+            margin-left: 10px;
+        }
+
+            #sidebar ul li > ul li {
+                font-size: 14px;
+            }
+
+        #sidebar ul li a {
+            padding: 10px 0;
+            display: block;
+            color: rgba(255, 255, 255, 0.6);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+            #sidebar ul li a span {
+                color: #44bef1;
+            }
+
+            #sidebar ul li a:hover {
+                color: #fff;
+            }
+
+        #sidebar ul li.active > a {
+            background: transparent;
+            color: #fff;
+        }
+
+@media (max-width: 991.98px) {
+    #sidebar {
+        margin-left: -270px;
+    }
+
+        #sidebar.active {
+            margin-left: 0;
+        }
+}
+
+#sidebar .custom-menu {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar .custom-menu {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+#sidebar .custom-menu .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+    #sidebar .custom-menu .btn i {
+        margin-right: -40px;
+        font-size: 14px;
+    }
+
+    #sidebar .custom-menu .btn.btn-primary {
+        background: transparent;
+        border-color: transparent;
+    }
+
+        #sidebar .custom-menu .btn.btn-primary:after {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background: #3445b4;
+            border-radius: 10px;
+        }
+
+        #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
+            background: transparent !important;
+            border-color: transparent !important;
+        }
+
+/*UpdateUserPartial*/
+.update-form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+    .update-form-row .fa {
+        color: #6a74b3
+    }
+
+.update-header {
+    position: absolute;
+    width: 100%;
+}
+
+.input-group-text {
+    width: 42px;
+    align-items: center;
+}
+
+/*PhoneListUpdate*/
+.list-update {
+    border: 1px solid #f7f7f9;
+    padding: 30px;
+}
+
+    .list-update .form-group {
+        margin-bottom: 10px;
+    }
+
+/*NewPhoneList*/
+.newListContainer {
+    border: 1px solid #f7f7f9;
+    padding: 30px;
+}
+
+    .newListContainer .row {
+        margin-bottom: 10px
+    }
+
+    .newListContainer .form-group {
+        margin-bottom: 10px
+    }
+
+    .open{
+        color:#fff !important;
+    }

@@ -1,0 +1,55 @@
+﻿@model List<CallLog>
+
+<br />
+<a href="~/PhoneList/NewCallLog" class="btn btn-success btn-sm">Yeni Kayıt Oluştur</a>
+<br />
+<br />
+<div class="callLogData">
+    <table id="tbl1" class="callListTable table table-bordered" role="grid">
+        <thead>
+            <tr role="row">
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="artan sıralama"></th>
+                <th class="sorting col-md-1" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Ad">Ad</th>
+                <th class="sorting col" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Soyad">Soyad</th>
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Telefon">Telefon</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr role="row" data-id="@item.ListId">
+                        <td class="subList text-center">
+                            <span id="btnDetail" class="btn btn-info btn-sm open" data-show="false"><i class="fa fa-plus"></i></span>
+                        </td>
+                        <td>@item.CalledName</td>
+                        <td>@item.CalledLastName</td>
+                        <td>@item.CalledPhone</td>
+                    </tr>
+                    <tr class="clTableDetail" style="display:none">
+                        <td></td>
+                        <td colspan="7">
+                            <div>
+                                <table id="table-detail" class="table table-bordered table-sm table-striped table-light">
+                                    <thead>
+                                        <tr role="row">
+                                            <th>Tarih</th>
+                                            <th>Arama Durumu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

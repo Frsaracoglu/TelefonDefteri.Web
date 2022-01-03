@@ -1,0 +1,33 @@
+﻿@model List<PhoneList>
+
+<br />
+<a href="~/PhoneList/NewList" class="btn btn-success btn-sm">Yeni Kişi Oluştur</a>
+<br />
+<br />
+<div class="list-table col-md-10">
+    <table class="phoneListTable table table-bordered">
+        <thead>
+            <tr role="row">
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Ad">Ad</th>
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Soyad">Soyad</th>
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="EMail">E Mail</th>
+                <th class="sorting" tabindex="0" aria-controls="tbl1" aria-sort="ascending" aria-label="Durum">Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr role="row">
+                        <td>@item.Name</td>
+                        <td>@item.LastName</td>
+                        <td>@item.EMail</td>
+                        <td style="text-align:center">@item.Status</td>
+                        <td style="text-align:center"> <input type="button" class="btn btn-success btn-sm purple" value="Güncelle" onclick="@("window.location.href='" + @Url.Action("Update", "PhoneList", new {listId =item.ListId })  + "'");" /></td>
+                        <td style="text-align:center"><button type="button" data-model-id="@item.ListId" class="deleteRecord btn btn-danger btn-sm black"><i class="fa fa-trash-o"></i>Sil</button></td>
+                    </tr>
+                }}
+        </tbody>
+    </table>
+</div>

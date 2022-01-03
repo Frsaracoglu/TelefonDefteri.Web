@@ -1,0 +1,11 @@
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\bin\Debug\net5.0\TelefonDefteriUtil.deps.json
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\bin\Debug\net5.0\TelefonDefteriUtil.dll
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\bin\Debug\net5.0\ref\TelefonDefteriUtil.dll
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\bin\Debug\net5.0\TelefonDefteriUtil.pdb
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.dll
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\ref\TelefonDefteriUtil.dll
+C:\Users\Fatih\source\repos\TelefonDefteri.Web\TelefonDefteriUtil\obj\Debug\net5.0\TelefonDefteriUtil.pdb

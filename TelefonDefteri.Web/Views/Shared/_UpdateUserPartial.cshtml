@@ -1,0 +1,61 @@
+﻿@model User
+@using Microsoft.AspNetCore.Http
+<div class="update-container">
+    <div class="update-header">
+        <h4><span class="icon-update-header fa fa-pencil" style="color: #5d7892">Kullanıcı Güncelleme</span></h4>
+    </div>
+    <br />
+    <br />
+    <div class="update-box">
+        @using (Html.BeginForm("UpdateUser", "Settings", FormMethod.Post, new { @id = "updateUser" }))
+        {
+            <div class="row">
+                <div class="update-form-row">
+                    <div class="col-12 col-xl-6 col-lg-8">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa fa-user text-primary"></i>
+                            </span>
+                            @Html.TextBoxFor(n => n.Name, new { @class = "form-control", placeholder = @Context.Session.GetString("user_name") })
+                        </div>
+                    </div>
+                </div>
+                <div class="update-form-row">
+                    <div class="col-12 col-xl-6 col-lg-8">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa fa-user text-primary"></i>
+                            </span>
+                            @Html.TextBoxFor(n => n.LastName, new { @class = "form-control", placeholder = @Context.Session.GetString("user_lastName") })
+                        </div>
+                    </div>
+                </div>
+                <div class="update-form-row">
+                    <div class="col-12 col-xl-6 col-lg-8">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope text-primary"></i>
+                            </span>
+                            @Html.TextBoxFor(n => n.Email, new { @class = "form-control", placeholder = @Context.Session.GetString("user_email") })
+                        </div>
+                    </div>
+                </div>
+                <div class="update-form-row">
+                    <div class="col-12 col-xl-6 col-lg-8">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock text-primary"></i>
+                            </span>
+                            @Html.PasswordFor(n => n.Password, new { @class = "form-control", placeholder = "Password" })
+                        </div>
+                        @Html.HiddenFor(l => l.UserId)
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 ml-auto">
+                    <button class="updateUserRecord btn btn-primary" type="button">Kaydet</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
